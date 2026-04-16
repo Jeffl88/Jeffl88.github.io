@@ -11,17 +11,101 @@
         <h1 class="title">Black Hat Visualization</h1>
         <!--Holds the black hat visualization-->
         <div id="bhvis">
-
+            <div class='tableauPlaceholder' id='viz1776304963829' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt='Disparity In Police Crime Allegations ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHat_17763042286390&#47;Sheet2&#47;1_rss.png' style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='BlackHat_17763042286390&#47;Sheet2' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlackHat_17763042286390&#47;Sheet2&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1776304963829');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
         </div>
-        <p>This is the black hat visualization because...</p>
     
         <h1 class="title">White Hat Visualization</h1>
         <!--Holds the white hat visualization-->
         <div id="whvis">
-
+            <div class='tableauPlaceholder' id='viz1776304562755' style='position: relative'>
+                <noscript>
+                    <a href='#'><img alt='Occurrence of Each Type Of Complaint 1985-2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhiteHat_17763022592410&#47;Sheet3&#47;1_rss.png' style='border: none' /></a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='WhiteHat_17763022592410&#47;Sheet3' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhiteHat_17763022592410&#47;Sheet3&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1776304562755');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
         </div>
-        <p>This is the white hat visualization because...</p>
+        <p>Note: the size of the circles indicate the number of unique individuals of that type of complaint.</p>
+        
+        <div id="writeup">
+            <h2 class="title">Write-up Section</h2>
+            <h3 class="title">Black Hat</h3>
+            <p>
+                The visualization misleads through encoding and the legend.
 
+                The visualization makes it seem groups like the transgender individuals do not exist and focuses mostly on
+                males and females. The axis was used to emphasize the difference between males and females on the force.
+                The graph neglects to mention that men are more likely to be police officers. As a result, they show up more often
+                in allegation lists. This encourages the conclusion that men are worse in this department without this context.
+                The choice of color intentionally highlight this. Null gender complainants were unincluded, which skews the data. 
+                
+            </p>
+            <h3 class="title">White Hat</h3>
+            <p>
+                The visualization depicts the the counts of allegation categories for civilian complaints against New York Police Officers.
+
+                A dot plot was chosen to prevent viewers from thinking that there are data points between the years (in the case of a line graph)
+                Brighter colors were chosen for smaller dots to enhance the contrast, which makes them easier to distinguish.
+                The y-axis describes the count of individuals for each complaint type. This was done by counting the shield numbers,
+                which are the unique identifiers for each police officer. 
+                The x-axis displays all the years covered by the dataset. 
+                Any other manipulation of this axis would not show the full picture regarding the research question. 
+                This would be cherrypicking.
+                The size of the dots represent the unique individuals for that year and allegation category. 
+                The visualization parameters are set in a way that significant differences between counts are shown through 
+                increasing radii of the dots. While someone is interacting with the datapoints, they can see this through the tooltips.
+                This is added to avoid misleading viewers when using total counts of the allegation type, which do not account
+                for the fact that officers can have repeat offenses by itself. For example, in 2020, one of the officers had 3 instances of same
+                complaint type.
+            </p>
+        </div>
 
         <div id="demo">
             <h2 class="title">Demo Video</h2>
